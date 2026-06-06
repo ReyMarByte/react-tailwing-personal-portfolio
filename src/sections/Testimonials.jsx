@@ -2,9 +2,9 @@ import { ChevronRight, ChevronLeft, Quote } from "lucide-react";
 import { useState } from "react";
 const testimonials = [
   {
-    quote: "Was a pleasure to work with his, I hope that we'll get an oppurtunities to collaborate in future",
+    quote: "Was a pleasure to work with him, I hope that we'll get an oppurtunity to collaborate in future",
     author: "Roman Z.",
-    role: "Team lead",
+    role: "Team Lead",
   },
 ];
 

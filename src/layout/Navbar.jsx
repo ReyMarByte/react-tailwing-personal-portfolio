@@ -13,6 +13,11 @@ export const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
+    const scrollToContact = () => {
+      setIsMobileMenuOpen(false);
+      document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+    };
+
     useEffect(() => {
       const handleScroll = () => {
         setIsScrolled(window.scrollY > 50);
@@ -47,7 +52,7 @@ export const Navbar = () => {
         </div>
         {/* CTA Btn */}
         <div className="hidden md:block">
-          <Button size="sm">Contact me</Button>
+          <Button size="sm" onClick={scrollToContact}>Contact me</Button>
         </div>
 
         {/* Mobile menu button */}
@@ -71,7 +76,7 @@ export const Navbar = () => {
             </a>
           ))}
 
-          <Button onClick={() => setIsMobileMenuOpen(false)}>Contact me</Button>
+          <Button onClick={scrollToContact}>Contact me</Button>
         </div>
       </div>}
     </header>

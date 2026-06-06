@@ -13,7 +13,7 @@ const footerLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
-  { href: "#contact", label: "Contact" },
+  { href: "#contact", label: "Contact me" },
 ];
 
 export const Footer = () => {
@@ -44,7 +44,7 @@ export const Footer = () => {
               </a>
             ))}
           </nav>
-          {/* SOcial Links */}
+          {/* Social Links */}
           <div className="flex items-center gap-4">
             {socialLinks.map((social) => (
               <a
